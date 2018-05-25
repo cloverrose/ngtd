@@ -43,8 +43,8 @@ func NewRedis(host, port, pass string, kv, vk int) (*Redis, error) {
 
 	return &Redis{
 		client: client,
-		kv: kv,
-		vk: vk,
+		kv:     kv,
+		vk:     vk,
 	}, nil
 }
 
